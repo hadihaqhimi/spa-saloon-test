@@ -1,0 +1,6 @@
+{
+  "name": "nur-jannah-mern", "private": true, "type": "module",
+  "scripts": {"dev": "concurrently \"npm run dev -w server\" \"npm run dev -w client\"", "build": "npm run build -w client", "start": "npm run start -w server", "test": "node --test server/test/*.test.js"},
+  "workspaces": ["server", "client"],
+  "devDependencies": {"concurrently": "^9.2.1"}
+}
